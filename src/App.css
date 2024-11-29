@@ -1,0 +1,76 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Amiri', serif;
+  background-color: #f3f3f3;
+}
+
+.App {
+  display: grid;
+  place-content: center;
+  padding-block: 2rem;
+}
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 3rem;
+  color: #4b2e83;
+
+}
+ul.data {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-inline: 1rem;
+}
+.items {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+li {
+  background-color: #fff;
+  margin: 10px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+}
+.btn{
+  padding: 10px 20px ;
+  background-color: #4b2e83;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 10px ;
+  font-size: 1.3rem;
+}
+.btn:hover {
+  background-color: #3a2163;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: fit-content;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 30px;
+  padding: 0 5px 8px 0;
+  background: repeating-linear-gradient(90deg,currentColor 0 8%,#e5e0e000 0 10%) 200% 100%/200% 3px no-repeat;
+  animation: l3 2s steps(6) infinite;
+}
+.loader:before {
+  content:"Loading..."
+}
+@keyframes l3 {to{background-position: 80% 100%}}
